@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  padding: 50px 80px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  opacity: .6;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.joke p {
+  font-size: 30px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #9b59b6;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  padding: 14px 30px;
+  transition: background 0.2s;
+}
+
+.btn:hover { background-color: #8e44ad; }
+
+.btn:focus { outline: none; }
