@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: linear-gradient(to bottom right, #1f1f2e, #302b63, #24243e);
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  overflow: hidden;
+}
+
+.countdown-container {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  animation: slideIn 0.5s ease forwards;
+}
+
+.countdown-el { display: flex; flex-direction: column; align-items: center; }
+
+.big-text {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 1;
+  min-width: 120px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.countdown-el span {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 8px;
+  color: #aaa;
+}
+
+.final { display: none; text-align: center; animation: slideIn 0.5s ease forwards; }
+.final h1 { font-size: 3rem; margin-bottom: 20px; }
+.final button {
+  background: #fff;
+  border: none;
+  border-radius: 6px;
+  color: #302b63;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 30px;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideOut {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-30px); }
+}
+
+.countdown-container.hide, .final.hide {
+  animation: slideOut 0.5s ease forwards;
+}
