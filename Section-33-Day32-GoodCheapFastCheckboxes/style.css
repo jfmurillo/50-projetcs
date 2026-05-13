@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: #2b2d42;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container { text-align: center; }
+
+h1 { color: #ffffff; font-size: 3rem; margin-bottom: 10px; }
+.subtitle { color: #aaa; font-size: 1.2rem; margin-bottom: 40px; }
+
+.items { list-style-type: none; padding: 0; margin: 0; }
+
+.item {
+  background-color: #fff;
+  border-radius: 10px;
+  color: #2b2d42;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 20px 40px;
+  width: 400px;
+  transition: opacity 0.3s ease;
+}
+
+.item input[type="checkbox"] { display: none; }
+
+.item label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.check-ball {
+  background-color: #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.item input[type="checkbox"]:checked + label .check-ball {
+  background-color: #ff6b6b;
+  animation: ball 0.4s ease;
+}
+
+.item.disabled { opacity: 0.4; pointer-events: none; }
+
+@keyframes ball {
+  0%   { transform: scale(0.9); }
+  50%  { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
