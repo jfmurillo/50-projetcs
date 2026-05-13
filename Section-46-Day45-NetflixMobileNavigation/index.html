@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Mobile Navigation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <!-- Logo -->
+      <div class="logo">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+          alt="Netflix"
+          width="90"
+        />
+      </div>
+
+      <!-- Nav items -->
+      <ul class="nav-links">
+        <li class="nav-link">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </li>
+
+        <li class="nav-link has-dropdown">
+          <i class="fas fa-tv"></i>
+          <span>TV Shows</span>
+          <ul class="dropdown">
+            <li>Action &amp; Adventure</li>
+            <li>Anime Series</li>
+            <li>British Series</li>
+            <li>Kids' TV</li>
+            <li>Reality TV</li>
+            <li>Romantic TV Shows</li>
+          </ul>
+        </li>
+
+        <li class="nav-link has-dropdown">
+          <i class="fas fa-film"></i>
+          <span>Movies</span>
+          <ul class="dropdown">
+            <li>Action &amp; Adventure</li>
+            <li>Anime Features</li>
+            <li>Children &amp; Family Movies</li>
+            <li>Classic Movies</li>
+            <li>Comedies</li>
+            <li>Documentaries</li>
+          </ul>
+        </li>
+
+        <li class="nav-link has-dropdown">
+          <i class="fas fa-grin-stars"></i>
+          <span>New &amp; Popular</span>
+          <ul class="dropdown">
+            <li>New Arrivals</li>
+            <li>Top Picks for You</li>
+            <li>This Week's Top 10</li>
+          </ul>
+        </li>
+
+        <li class="nav-link">
+          <i class="fas fa-list"></i>
+          <span>My List</span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main">
+    <h1>Netflix Mobile Navigation</h1>
+    <p>Click on items with a caret to expand their subcategory list</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
