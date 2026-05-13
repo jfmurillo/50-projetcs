@@ -1,0 +1,41 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: #2196f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.ripple-btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  color: #2196f3;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 1px;
+  overflow: hidden;
+  padding: 20px 40px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.ripple-btn .circle {
+  animation: ripple .6s linear;
+  background-color: rgba(33, 150, 243, 0.3);
+  border-radius: 50%;
+  height: 100px;
+  left: 0;
+  margin-left: -50px;
+  margin-top: -50px;
+  position: absolute;
+  top: 0;
+  transform: scale(0);
+  width: 100px;
+}
+
+@keyframes ripple {
+  to { transform: scale(4); opacity: 0; }
+}
