@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Heebo', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: background .5s, color .5s;
+}
+
+body.dark {
+  background-color: #111;
+  color: #eee;
+}
+
+.toggle {
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 8px 20px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  transition: background .5s, color .5s, border .5s;
+}
+
+body.dark .toggle {
+  background-color: #333;
+  border-color: #eee;
+  color: #eee;
+}
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clock {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,0,0,.15);
+  height: 300px;
+  position: relative;
+  width: 300px;
+  margin-bottom: 30px;
+  transition: background .5s, box-shadow .5s;
+}
+
+body.dark .clock {
+  background-color: #444;
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+
+.needle {
+  background-color: #333;
+  border-radius: 10px;
+  bottom: 50%;
+  left: 50%;
+  position: absolute;
+  transform-origin: bottom center;
+  transform: translateX(-50%) rotate(0deg);
+  transition: transform .05s cubic-bezier(.1, 2.7, .58, 1);
+}
+
+body.dark .needle { background-color: #eee; }
+
+.needle.hour {
+  height: 90px;
+  margin-left: -3px;
+  width: 6px;
+}
+
+.needle.minute {
+  height: 120px;
+  margin-left: -2px;
+  width: 4px;
+}
+
+.needle.second {
+  background-color: #e74c3c;
+  height: 130px;
+  margin-left: -1px;
+  width: 2px;
+}
+
+.center-point {
+  background-color: #e74c3c;
+  border-radius: 50%;
+  height: 12px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+}
+
+.time {
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+
+.date {
+  color: #888;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
