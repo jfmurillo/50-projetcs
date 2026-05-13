@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: #7386D5;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+h1 {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 20px;
+}
+
+.empty {
+  background-color: rgba(255,255,255,.4);
+  border: 3px solid rgba(255,255,255,.8);
+  border-radius: 10px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s;
+}
+
+.empty.hovered { background-color: rgba(255,255,255,.6); }
+
+.fill {
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: grab;
+  height: 130px;
+  width: 130px;
+  background-image: url('https://media.giphy.com/media/EatwJZRUIv41G/giphy.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+.fill.hold { border: 4px solid #fff; opacity: .7; }
