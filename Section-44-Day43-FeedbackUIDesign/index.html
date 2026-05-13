@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback UI Design</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="rating-container">
+    <strong>How did we do?</strong>
+    <p>Please rate your experience with our customer service</p>
+    <ul class="ratings-list">
+      <li class="rating"><button>1</button></li>
+      <li class="rating"><button>2</button></li>
+      <li class="rating"><button>3</button></li>
+      <li class="rating"><button>4</button></li>
+      <li class="rating"><button>5</button></li>
+      <li class="rating"><button>6</button></li>
+      <li class="rating"><button>7</button></li>
+      <li class="rating"><button>8</button></li>
+      <li class="rating"><button>9</button></li>
+      <li class="rating"><button>10</button></li>
+    </ul>
+    <button class="btn" id="send">Send Review</button>
+  </div>
+
+  <div class="rating-container" id="panel">
+    <i class="fas fa-star fa-3x"></i>
+    <strong>Thank You!</strong>
+    <br/>
+    <strong>Feedback: <span id="number-display"></span></strong>
+    <p>Thank you for taking the time to give us feedback!</p>
+  </div>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <script src="script.js"></script>
+</body>
+</html>
